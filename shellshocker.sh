@@ -21,11 +21,11 @@ do
     case $opt in
         "Output")
             read -p 'Location to save output to: ' outfile
-			printf "%b \n"
+            printf "%b \n"
             ;;
         "List")
             read -p 'Path to list: ' list
-			printf "%b \n"
+            printf "%b \n"
             ;;
         "Test")
             if [ "$list" == "" ]
