@@ -17,6 +17,6 @@ Finally after a list of URLs has been loaded you can test them for the shellshoc
 If any given host is vulnerable the contents of their /etc/passwd will be retrieved and printed to the terminal.
 Upon completion the script will exit.
 
-#Known issue
+# Known issue
 
 From time to time when testing a list of URLs HTML documents are retrieved as well together with the results from the command injection when executed succesfully.
